@@ -1,3 +1,5 @@
+// jrodgers "PAPERCUT"
+
 // variable coordinates for my rollover box
 int x = 400;
 int y = 0;
