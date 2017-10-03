@@ -1,3 +1,5 @@
+// jrodgers "PROTO GAMECUBE" A tentative exploration of my final project build 
+
 int x = 100;
 float rotX, rotY;
 PFont font;
@@ -17,6 +19,8 @@ void draw () {
   smooth();
   fill (0, 255, 0, 180);
   textSize (60);
+
+// match reference coordinates of message to ellipse variable (done after testing placekeeper scrolling)
   text ("01001001 00100000 01100001 01101101 00100000 01100001 00100000 01110100 01101111 01110100 01100001 01101100 00100000 01101110 01101111 01101111 01100010", x, height/2);
   
 // create ellipe as placekeeper (made invisible when no longer needed), scrolls right to left
@@ -29,7 +33,8 @@ void draw () {
   if (x < width -5440) {
    x = 0; 
   }
-  
+ 
+// establish central axis of vector graphic cube, place mid screen, rotate via mouse input
   stroke (255, 255, 255, 255);
   noFill ();
   //fill (255, 255, 255, 30);
@@ -37,10 +42,9 @@ void draw () {
   rotateX (rotX);
   rotateY (rotY);
   box (410);
-  
- 
 }
 
+// set cube rotation speed
 void mouseMoved () {
   rotX -= (mouseY - pmouseY) * 0.01;
   rotY -= (mouseX - pmouseX) * 0.01;
