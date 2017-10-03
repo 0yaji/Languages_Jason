@@ -1,3 +1,5 @@
+// jrodgers "LE CHAT NOIR"
+
 // variables for later, to make the pupils follow the mouse
 float ellipse_left=275;
 float ellipse_right=525;
